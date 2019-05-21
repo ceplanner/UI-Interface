@@ -221,9 +221,9 @@ img {
   display: flex;
   position: relative;
   width: 100%;
-  -webkit-box-shadow: 0px 20px 49px 1px rgba(199, 203, 209, 0.19), 0px 20px 49px 1px rgba(199, 203, 209, 0.55);
-  -moz-box-shadow: 0px 20px 49px 1px rgba(199, 203, 209, 0.19), 0px 20px 49px 1px rgba(199, 203, 209, 0.55);
-  box-shadow: 0px 20px 49px 1px rgba(199, 203, 209, 0.55), 0px 20px 49px 1px rgba(199, 203, 209, 0.55);
+  -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.19), 0px 31px 49px 1px rgba(199, 203, 209, 0.55);
+  -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.19), 0px 31px 49px 1px rgba(199, 203, 209, 0.55);
+  box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.55), 0px 31px 49px 1px rgba(199, 203, 209, 0.55);
 }
 .get-started h1 {
   position: absolute;
@@ -321,7 +321,7 @@ img {
   width: 35px;
   height: 35px;
   position: absolute;
-  right: -30px;
+  right: -26px;
 }
 .learn-more {
   height: 90px;
@@ -332,4 +332,41 @@ img {
   width: 3.5rem;
   margin-left: 2.5rem;
   padding-top: 1rem;
+}
+.service-content {
+  display: flex;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+}
+.service-content .text-content {
+  width: 50%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.service-content .text-content h2 {
+  padding-top: 30px;
+}
+.service-content .text-content img {
+  width: 50px;
+  padding-top: 60px;
+}
+.service-content .text-content p {
+  text-align: left;
+  letter-spacing: 1px;
+  padding-top: 90px;
+  color: #737c8c;
+}
+.service-content .img-icon {
+  width: 50%;
+}
+.bottom-content {
+  align-self: flex-start;
+  width: 30px;
+  transform: rotate(180deg);
 }
