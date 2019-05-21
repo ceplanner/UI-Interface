@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color:  @aliceblue;
+}
+h1 {
+  font-size: 3.5rem;
+  color: @h1-color;
+  font-family: "Open Sans:700", sans-serif;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  font-family: "Open Sans:600", sans-serif;
+  text-transform: capitalize;
+  color: @h2-color;
+}
+
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+a {
+  font-family: "Open Sans:600", sans-serif;
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @mobile {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+//would be changing the font family soon
