@@ -3,11 +3,11 @@
   position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.19),
-  0px 31px 49px 1px rgba(199, 203, 209, 0.55);
+    0px 31px 49px 1px rgba(199, 203, 209, 0.55);
   -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.19),
-  0px 31px 49px 1px rgba(199, 203, 209, 0.55);
+    0px 31px 49px 1px rgba(199, 203, 209, 0.55);
   box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.55),
-  0px 31px 49px 1px rgba(199, 203, 209, 0.55);
+    0px 31px 49px 1px rgba(199, 203, 209, 0.55);
 
   h1 {
     position: absolute;
@@ -17,11 +17,19 @@
     height: 30%;
     width: 100%;
     z-index: 1;
+
+    @media @mobile {
+      font-size: 3rem;
+    }
   }
   .successImage {
     width: 50%;
     height: 100%;
     position: relative;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     p {
       position: absolute;
@@ -30,6 +38,28 @@
       color: @small-text-grey;
       font-size: 1.2rem;
     }
+
+    .login-button {
+      height: 4rem;
+      width: 14rem;
+      background: @button-hover;
+      color: @white;
+      outline: none;
+      border: 1px solid @button-hover;
+      margin-top: 30px;
+      position: absolute;
+      left: 35%;
+      font-size: 2rem;
+      bottom: 10%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px 10px #4d0f612b;
+      font-size: 700;
+      display: none;
+
+      @media @mobile {
+        display: block;
+      }
+    }
   }
 }
 
@@ -37,6 +67,10 @@
   width: 50%;
   position: relative;
   background: @white;
+
+  @media @mobile {
+    display: none;
+  }
 
   .form {
     height: 88%;

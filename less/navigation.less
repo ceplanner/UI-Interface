@@ -24,14 +24,78 @@
       display: flex;
       justify-content: space-evenly;
       width: 50%;
+      position: relative;
+      @media @mobile {
+       
+          height: 400px;
+           width: -300px;
+          position: fixed;
+          
+          z-index: 1;
+          top: 90px;
+          right: -300px;
+          background-color: @background;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 10px;
+          display: flex;
+          flex-direction: column;
 
+      }
       a {
         color: @label-color;
+
+        @media @mobile {
+          
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 1.8rem;
+            transition: 0.3s;
+          
+        }
       }
 
       .link-active {
         font-weight: bold;
       }
     }
+    .show {
+      right: 0;
+    }
   }
 }
+
+.nav-icon {
+  margin: 1em;
+  width: 4rem;
+  display: none;
+   
+@media @mobile {
+  display: block;
+}
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: @label-color;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.change.nav-icon:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.change.nav-icon:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.change.nav-icon div {
+  transform: scale(0);
+}
+
