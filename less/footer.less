@@ -1,5 +1,5 @@
 .footer {
-  background: #f1f0ff;
+  background: @footer-background-color;
   width: 100%;
   height: 20.7rem;
 
@@ -12,9 +12,7 @@
     }
 
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    .display-flex(center, flex-start, column);
 
     .logo {
       padding-left: 4.9rem;

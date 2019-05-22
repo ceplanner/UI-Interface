@@ -11,16 +11,14 @@
     position: relative;
     max-width: 104rem;
     margin: 0 auto;
-    display: flex;
 
     p {
-      display: flex;
-      align-items: center;
+      .display-flex(@align:center);
 
       a {
         padding-right: 1.5rem;
-        color: #aaa6fc;
-        border-bottom: 2px solid #8f96a3;
+        color: @label-color;
+        border-bottom: 2px solid @small-text-grey;
         padding-left: 10px;
       }
       img {
