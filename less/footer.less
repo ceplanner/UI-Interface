@@ -1,19 +1,25 @@
 .footer {
-  background: #f1f0ff;
+  background: @footer-background-color;
   width: 100%;
   height: 20.7rem;
 
   .footer-container {
     margin: 0 auto;
-    max-width: 80%;
-    
+    width: 80%;
+
+    @media @mobile {
+      width: 90%;
+    }
+
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    .display-flex(center, flex-start, column);
 
     .logo {
-        padding-left: 4.9rem;
+      padding-left: 4.9rem;
+
+      @media @mobile {
+        padding-left: 0px;
+      }
 
       img {
         padding-top: 40px;
@@ -25,6 +31,11 @@
       padding-top: 20px;
       display: inline;
       padding-left: 4.9rem;
+
+      @media @mobile {
+        padding-left: 0px;
+      }
+
       img {
         width: 40px;
         padding: 10px;
