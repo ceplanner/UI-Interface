@@ -75,32 +75,16 @@
     justify-content: center;
     align-items: center;
     padding-top: 90px;
+    
+    h3{
+      padding: 3rem;
+      color: @darkgray;
+      text-align: center;
+      line-height: 1.5;
 
-    .input-group {
-      width: 70%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding-left: 2rem;
-      padding-left: 2rem;
-
-      label {
-        display: block;
-        color: @label-color;
-        font-family: "Open Sans:700", sans-serif;
-        font-size: 1.6rem;
-
-        &[for="email"] {
-          padding-bottom: 3rem;
-        }
-        &[for="password"] {
-          padding-top: 4rem;
-          padding-bottom: 2rem;
-        }
-      }
-      input {
-        border: 0;
-        border-bottom: 2px solid @label-color;
+      span {
+        font-size: 700;
+        color: @magenta;
       }
     }
   }
@@ -112,6 +96,8 @@
     outline: none;
     border: 1px solid @button-default;
     margin-top: 30px;
+
+   // .login-button(3.5rem, 11rem, @button-default, @button-default);
 
     &:hover {
       background: @button-hover;
