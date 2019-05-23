@@ -33,11 +33,11 @@
     padding-left: 12.9rem;
     color: @label-color;
 
-@media @mobile {
-  width: 90%;
-  margin: 0 auto;
-  padding-left: 0px;
-}
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 0px;
+    }
 
     .arrow-up {
       align-self: flex-start;
@@ -46,7 +46,10 @@
       padding-top: 1rem;
     }
     p {
+      a {
+        color: @label-color;
         font-size: bold;
+      }
     }
   }
 }
