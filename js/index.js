@@ -1,5 +1,5 @@
-const loginButton = document.querySelector('.login-button');
+const loginButton = document.querySelector('#login-button');
 
 loginButton.addEventListener('click', () => {
-    window.location.assign('https://ceplanner.herokuapp.com/login');
+    window.location.replace('https://ceplanner.herokuapp.com/login');
 });

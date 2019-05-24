@@ -294,6 +294,7 @@ img {
   -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  transition: all 0.3s ease-in-out;
 }
 .get-started:hover {
   transform: scale(1.01);
@@ -425,6 +426,9 @@ img {
   height: 35px;
   position: absolute;
   right: -26px;
+}
+button {
+  cursor: pointer;
 }
 .learn-more {
   height: 90px;
