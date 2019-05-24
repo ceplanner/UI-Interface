@@ -16,4 +16,4 @@ With corporate event planner, users can plan their event more efficiently and ac
 Users get so save a lot of time that could arise due to confusion by allowing multiple users edit event plans, show recent activities, able to save vendors information. everybody is informed on the project journey.
 
 ### Getting Started
-To access the web page : [Corporate Event Planner](https://laughing-babbage-0ad662.netlify.com/)
+To access the web page : [Corporate Event Planner](https://ceplanner.netlify.com/)
