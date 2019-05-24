@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" async></script>
     <script src="./js/navigation.js" async></script>
     <title>Coperate Event Planner</title>
 </head>
@@ -18,11 +20,11 @@
                 <img src="assets/images/LOGO.png" alt="">
             </div>
             <nav class="nav-links">
-                <a href="#" class="link">services</a>
-                <a href="#" class="link">about</a>
+                <a href="#services" class="link">services</a>
+                <a href="about.html" class="link">about</a>
                 <a href="#" class="link">contact</a>
-                <a href="#" class="link link-active">sign in</a>
-                <a href="#" class="link">sign up</a>
+                <a href="https://ceplanner.herokuapp.com/login" class="link link-active">sign in</a>
+                <a href="https://ceplanner.herokuapp.com/Signup" class="link">sign up</a>
             </nav>
             <div class="nav-icon">
                 <div></div>
@@ -30,31 +32,24 @@
         </div>
     </header>
 
-    <main class="container" id="services">
+    <main class="container">
+
         <section class="get-started">
             <!-- h1 text is a working progress -->
             <h1>A Way to a Successful Event</h1>
             <div class="successImage">
                 <img src="assets/images/Image-winner.png" alt="" srcset="">
                 <button type="submit" class="login-button">Sign In</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, commodi.</p>
             </div>
             <div class="loginForm">
-                <form action="#" class="form">
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email">
-                    </div>
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                    </div>
-                    <p>forgot your password?</p>
-                    <button type="submit" class="login-button">Sign In</button>
-                </form>
+                <div class="form">
+                    <h3><span>Corporate Event Planner</span> provides corporations a comprehensive event planning
+                        platform able to handle the entire event lifecycle from start to finish.</h3>
+                    <button type="submit" id="login-button" class="login-button">Sign In</button>
+                </div>
                 <div class="signup-link">
                     <p>Do not have an account?</p>
-                    <p><a href="#" class="link">sign up</a><img src="assets/icons/arrow-right.png" alt=""></p>
+                    <p><a href="https://ceplanner.herokuapp.com/Signup" class="link">sign up</a><img src="assets/icons/arrow-right.png" alt=""></p>
 
                 </div>
             </div>
@@ -62,56 +57,61 @@
 
         <div class="learn-more">
             <h3>Learn more</h3>
-            <img src="assets/icons/chevron-down.png" alt="">
+           <a href="#services"><img src="assets/icons/chevron-down.png" alt=""></a> 
         </div>
 
-        <section class="organize service-content">
-            <div class="text-content">
-                <img src="assets/icons/paperclip.png" alt="paper clip icon">
-                <h2>Organize Event Details</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus dicta velit sequi
-                    praesentium quis magnam maiores autem mollitia facilis aliquid totam consectetur eius fugit
-                    omnis
-                    cum</p>
-            </div>
-            <div class="img-icon">
-                <img src="assets/images/Image-schedule .png" alt="">
-            </div>
-        </section>
+        <div id="services">
+            <section class="organize service-content">
+                <div class="text-content">
+                    <img src="assets/icons/paperclip.png" alt="paper clip icon">
+                    <h2>Organize Event Details</h2>
+                    <p>Have your event details all in one place. simplify the process of building event budgets. Have
+                        all
+                        your vendor and attendee's details listed. Easily Create a to do list for all activities for the
+                        event</p>
+                </div>
+                <div class="img-icon">
+                    <img src="assets/images/Image-schedule .png" alt="">
+                </div>
+            </section>
 
-        <section class="track service-content">
-            <div class="img-icon">
-                <img src="assets/images/Image-stats.png" alt="">
-            </div>
-            <div class="text-content">
-                <img src="assets/icons/tasks.png" alt="">
-                <h2>Easy to Track</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas delectus minus eum harum numquam,
-                    accusamus veniam aliquam cupiditate suscipit dolorem enim dolor natus eius facere. Corrupti</p>
-            </div>
-        </section>
+            <section class="track service-content">
+                <div class="img-icon">
+                    <img src="assets/images/Image-stats.png" alt="">
+                </div>
+                <div class="text-content">
+                    <img src="assets/icons/tasks.png" alt="">
+                    <h2>Easy to Track</h2>
+                    <p>Keep track of your vendors and attendees in a neat list. Easily track activities by marking off
+                        completed activities. Gain insights into creating future events with past kept records of
+                        previous events.
+                    </p>
+                </div>
+            </section>
 
-        <section class="collaborate service-content">
-            <div class="text-content">
-                <img src="assets/icons/comments-alt.png" alt="">
-                <h2>Collaborate with people</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur eaque iure blanditiis sunt,
-                    quidem vitae quisquam ea officiis tenetur nam minima, cumque quasi non optio culpa molestias.
-                </p>
-            </div>
-            <div class="img-icon">
-                <img src="assets/images/Image-collaborate.png" alt="">
-            </div>
-        </section>
+            <section class="collaborate service-content">
+                <div class="text-content">
+                    <img src="assets/icons/comments-alt.png" alt="">
+                    <h2>Collaborate with people</h2>
+                    <p>Knowing organizing successfull events are critically for bussiness,
+                        corporate Event planner lets you collaborate with anyone from anywhere in the world
+                        thereby increasing communication making sure the event goals are met.
+                    </p>
+                </div>
+                <div class="img-icon">
+                    <img src="assets/images/Image-collaborate.png" alt="">
+                </div>
+            </section>
+        </div>
     </main>
 
     <div class=" bottom-content">
         <div class="signup-link bottom-link">
-            <p><a href="#" class="link">sign up</a><img src="assets/icons/arrow-right.png" alt=""></p>
+            <p><a href="https://ceplanner.herokuapp.com/Signup" class="link">sign up</a><img src="assets/icons/arrow-right.png" alt=""></p>
         </div>
         <div class="top">
             <img class="arrow-up" src="assets/icons/chevron-down.png" alt="">
-            <p>TOP</p>
+            <p> <a href="#">TOP</a></p>
         </div>
     </div>
     <footer class="footer">
@@ -120,9 +120,9 @@
                 <img src="assets/images/footer-LOGO.png" alt="">
             </div>
             <div class="social-media">
-                <img src="assets/icons/instagram.png" alt="">
-                <img src="assets/icons/twitter.png" alt="">
-                <img src="assets/icons/facebook.png" alt="">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
             </div>
             <p>&copy 2019 Corporate Event Planner</p>
         </div>

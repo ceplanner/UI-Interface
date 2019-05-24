@@ -14,6 +14,7 @@
     .logo {
       width: 35%;
       text-align: center;
+      cursor: pointer;
       img {
         width: 20rem;
       }
@@ -36,10 +37,18 @@
           transition: 0.5s;
           padding-top: 10px;
           .display-flex(@dir:column);
+          
 
       }
       a {
         color: @label-color;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+      
+        &:hover {
+          color: @magenta;
+
+        }
 
         @media @mobile {
           
@@ -63,7 +72,7 @@
 
 .nav-icon {
   margin: 1em;
-  width: 4rem;
+  width: 3rem;
   display: none;
    
 @media @mobile {

@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #f0feff;
@@ -203,6 +204,7 @@ img {
 .navigation .navbar .logo {
   width: 35%;
   text-align: center;
+  cursor: pointer;
 }
 .navigation .navbar .logo img {
   width: 20rem;
@@ -235,6 +237,11 @@ img {
 }
 .navigation .navbar .nav-links a {
   color: #aaa6fc;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.navigation .navbar .nav-links a:hover {
+  color: #ac73ff;
 }
 @media (max-width: 500px) {
   .navigation .navbar .nav-links a {
@@ -252,7 +259,7 @@ img {
 }
 .nav-icon {
   margin: 1em;
-  width: 4rem;
+  width: 3rem;
   display: none;
 }
 @media (max-width: 500px) {
@@ -287,6 +294,10 @@ img {
   -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  transition: all 0.3s ease-in-out;
+}
+.get-started:hover {
+  transform: scale(1.01);
 }
 .get-started h1 {
   position: absolute;
@@ -360,29 +371,15 @@ img {
   align-items: center;
   padding-top: 90px;
 }
-.loginForm .form .input-group {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 2rem;
+.loginForm .form h3 {
+  padding: 3rem;
+  color: #5c6370;
+  text-align: center;
+  line-height: 1.5;
 }
-.loginForm .form .input-group label {
-  display: block;
-  color: #aaa6fc;
-  font-family: "Open Sans:700", sans-serif;
-  font-size: 1.6rem;
-}
-.loginForm .form .input-group label[for="email"] {
-  padding-bottom: 3rem;
-}
-.loginForm .form .input-group label[for="password"] {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}
-.loginForm .form .input-group input {
-  border: 0;
-  border-bottom: 2px solid #aaa6fc;
+.loginForm .form h3 span {
+  font-size: 700;
+  color: #ac73ff;
 }
 .loginForm .login-button {
   height: 3.5rem;
@@ -392,10 +389,12 @@ img {
   outline: none;
   border: 1px solid #aaa6fc;
   margin-top: 30px;
+  transition: all 300ms ease-in-out;
 }
 .loginForm .login-button:hover {
   background: #ac73ff;
   border: 1px solid #ac73ff;
+  transform: scale(1.2);
 }
 .signup-link {
   display: flex;
@@ -416,12 +415,20 @@ img {
   border-bottom: 2px solid #8f96a3;
   padding-right: 10px;
   padding-left: 10px;
+  transition: all 300ms ease-in-out;
+}
+.signup-link p:nth-child(2) a:hover {
+  color: #ac73ff;
+  transform: scale(1.2);
 }
 .signup-link p:nth-child(2) img {
   width: 35px;
   height: 35px;
   position: absolute;
   right: -26px;
+}
+button {
+  cursor: pointer;
 }
 .learn-more {
   height: 90px;
@@ -438,11 +445,16 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  margin-top: 7%;
-  margin-bottom: 10%;
   -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
   box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  margin-top: 7%;
+  margin-bottom: 10%;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.service-content:hover {
+  transform: scale(1.01);
 }
 @media (max-width: 500px) {
   .service-content {
@@ -483,8 +495,8 @@ img {
 }
 .service-content .text-content p {
   text-align: left;
-  letter-spacing: 1px;
-  padding-top: 90px;
+  padding-top: 70px;
+  padding-bottom: 0px;
   color: #737c8c;
 }
 @media (max-width: 500px) {
@@ -495,6 +507,7 @@ img {
 }
 .service-content .img-icon {
   width: 50%;
+  max-height: 550px;
 }
 @media (max-width: 500px) {
   .service-content .img-icon {
@@ -558,7 +571,8 @@ img {
   transform: rotate(180deg);
   padding-top: 1rem;
 }
-.bottom-content .top p {
+.bottom-content .top p a {
+  color: #aaa6fc;
   font-size: bold;
 }
 .footer {
@@ -595,11 +609,16 @@ img {
   padding-top: 20px;
   display: inline;
   padding-left: 4.9rem;
+  font-size: 2.5rem;
 }
 @media (max-width: 500px) {
   .footer .footer-container .social-media {
     padding-left: 0px;
   }
+}
+.footer .footer-container .social-media .fa {
+  color: #abb0ba;
+  padding-right: 1rem;
 }
 .footer .footer-container .social-media img {
   width: 40px;
@@ -608,4 +627,109 @@ img {
 .footer .footer-container p {
   color: #8f96a3;
   align-self: flex-end;
+}
+.team-intro {
+  width: 100%;
+  text-align: center;
+}
+.team-intro h1 {
+  font-size: 5rem;
+  padding-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .team-intro h1 {
+    font-size: 4rem;
+  }
+}
+.team-intro p {
+  padding-bottom: 40px;
+  color: #8f96a3;
+}
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.cards .team-member {
+  height: 350px;
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  -moz-box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  box-shadow: 0px 31px 49px 1px rgba(199, 203, 209, 0.87);
+  border-radius: 7px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.cards .team-member:hover {
+  transform: scale(1.01);
+}
+@media (max-width: 500px) {
+  .cards .team-member {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+.cards .team-member .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-left: 40px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .cards .team-member .text-content {
+    display: block;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.cards .team-member .text-content h2 {
+  padding-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .cards .team-member .text-content h2 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+}
+.cards .team-member .text-content h3 {
+  padding-bottom: 30px;
+  color: #737c8c;
+}
+.cards .team-member .text-content p {
+  color: #5c6370;
+  padding-bottom: 0px;
+}
+.cards .team-member .team-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .cards .team-member .team-image {
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+  }
+}
+.cards .team-member .team-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .cards .team-member .team-image img {
+    width: 200px;
+    height: 200px;
+  }
 }

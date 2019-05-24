@@ -1,8 +1,14 @@
 .service-content {
   .display-flex();
+  .box-shadow();
   margin-top: 7%;
   margin-bottom: 10%;
-  .box-shadow();
+  background: @white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   @media @mobile {
     display: block;
@@ -38,8 +44,8 @@
 
     p {
       text-align: left;
-      letter-spacing: 1px;
-      padding-top: 90px;
+      padding-top: 70px;
+      padding-bottom: 0px;
       color: @lightgray;
 
       @media @mobile {
@@ -51,6 +57,7 @@
 
   .img-icon {
     width: 50%;
+    max-height: 550px;
 
     @media @mobile {
       width: 100%;
